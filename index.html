@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <title>Dating Landing Page</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div id="header-container">
+        <!--Logo-->
+        <div class="logo">
+          <img src="/assets/icons/logo-colored.png" alt="" />
+        </div>
+
+        <!--Navigation menu-->
+        <nav id="nav">
+          <!--Changed href to data section. You can also add href if you need to route to another link-->
+          <ul>
+            <li><a data-section="hero">Home</a></li>
+            <li><a data-section="features">Features</a></li>
+            <li>
+              <a data-section="get-started">Get Started</a>
+            </li>
+            <li><a data-section="footer">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!--Download CTA-->
+        <div id="header-cta">
+          <a href="#sign-up">Sign Up</a>
+        </div>
+
+        <!--Hamburger Icon-->
+        <button id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!--mobile nav-->
+    <nav id="mobile-nav" class="mobile-nav-inactive">
+      <div id="nav-header">
+        <!--Logo-->
+        <div class="logo">
+          <img src="/assets/icons/logo-colored.png" alt="" />
+        </div>
+
+        <div id="close-menu">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!--Changed href to data section. You can also add href if you need to route to another link-->
+      <ul>
+        <li><a data-section="hero">Home</a></li>
+        <li><a data-section="features">Features</a></li>
+        <li><a data-section="get-started">Getting Started</a></li>
+        <li><a data-section="footer">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Page main content-->
+    <main>
+      <!--Hero-->
+      <section id="hero">
+        <div id="hero-container">
+          <h1>Find Your Perfect Match</h1>
+          <p>
+            Meet new people and build lasting relationships. Wherever you are,
+            love is just a swipe away. Join millions who’ve found love here!
+          </p>
+
+          <div id="cta-buttons">
+            <a href="#" class="cta-button google-play">
+              <img src="assets/icons/google-play.png" alt="Google Play Icon" />
+              <div class="button-text">
+                <span>GET IT ON</span>
+                <h4>Google Play</h4>
+              </div>
+            </a>
+
+            <a href="" class="cta-button app-store">
+              <img src="assets/icons/apple.png" alt="Apple Store Icon" />
+              <div class="button-text">
+                <span>Download on the</span>
+                <h4>App Store</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--Features-->
+      <section id="features">
+        <h2 class="section-heading">What Makes Us Different</h2>
+
+        <div id="features-container" class="flex-container">
+          <!--Feature-->
+          <div class="card feature">
+            <span class="icon"
+              ><img src="/assets/icons/smart-matching.png" alt="Smart Matching"
+            /></span>
+            <h4 class="card-header">Smart Matching</h4>
+            <p>
+              Our advanced matching algorithm suggests people who share your
+              values and interests, helping you connect on a deeper level.
+            </p>
+          </div>
+
+          <!--Feature-->
+          <div class="card feature">
+            <span class="icon"
+              ><img
+                src="/assets/icons/profile-customization.png"
+                alt="Smart Matching"
+            /></span>
+            <h4 class="card-header">Profile Customization</h4>
+            <p>
+              We prioritize your privacy. All your data is secure, and you have
+              control over who sees your profile.
+            </p>
+          </div>
+
+          <!--Feature-->
+          <div class="card feature">
+            <span class="icon"
+              ><img src="/assets/icons/video-chat.png" alt="Video Chat"
+            /></span>
+            <h4 class="card-header">Video Chat</h4>
+            <p>
+              Take conversations to the next level. Start a video chat with your
+              match when you're ready.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Get Started-->
+      <section id="get-started">
+        <div id="get-started-container">
+          <div>
+            <h2 class="section-heading">How It Works</h2>
+            <img src="/assets/images/how-it-works.jpg" alt="" />
+          </div>
+
+          <div id="steps-container" class="flex-container">
+            <!--Step-->
+            <div class="step">
+              <div>
+                <span class="step-icon"
+                  ><img
+                    src="/assets/icons/create-account.png"
+                    alt="Smart Matching"
+                /></span>
+              </div>
+
+              <div>
+                <h4 class="card-header">Create Your Profile</h4>
+                <p>
+                  Upload a photo, add your interests, and tell us what you’re
+                  looking for. We use this information to help you find
+                  meaningful connections.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <span class="step-icon"
+                  ><img
+                    src="/assets/icons/browse-match.png"
+                    alt="Smart Matching"
+                /></span>
+              </div>
+
+              <div>
+                <h4 class="card-header">Browse Matches</h4>
+                <p>
+                  Swipe through profiles tailored to your preferences and find
+                  people who share your interests and values.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <span class="step-icon"
+                  ><img src="/assets/icons/connect.png" alt="Smart Matching"
+                /></span>
+              </div>
+
+              <div>
+                <h4 class="card-header">Start Connecting</h4>
+                <p>
+                  Send a message, start a chat, or even schedule a virtual
+                  coffee date right from the app!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Review-->
+      <section id="reviews">
+        <h2 class="section-heading">Trusted by Our Community!</h2>
+
+        <div id="carousel-container">
+          <div id="reviews-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer">
+      <div id="footer-container">
+        <!-- Tag Section -->
+        <div class="footer-tag">
+          <div class="logo">
+            <img src="/assets/icons/logo-colored.png" alt="" />
+          </div>
+          <p>
+            Connecting people and creating lasting <br />relationships around
+            the world.
+          </p>
+          <div class="footer-socials">
+            <a href="#"
+              ><img src="assets/icons/facebook.png" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/icons/instagram.png" alt="Instagram"
+            /></a>
+            <a href="#"><img src="assets/icons/x.png" alt="X" /></a>
+            <a href="#"><img src="assets/icons/tiktok.png" alt="X" /></a>
+          </div>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#get-started">Get Started</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <a href="mailto:support@example.com"
+            ><p>Email: support@example.com</p></a
+          >
+          <p>Phone: +123 456 7890</p>
+        </div>
+      </div>
+
+      <div id="footer-bottom">
+        <p>&copy; 2024 Your Dating App Name. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/carousel.js"></script>
+  </body>
+</html>
