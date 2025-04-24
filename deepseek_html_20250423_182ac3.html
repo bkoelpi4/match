@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PerfectMatch - Find Your Soulmate</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #ff6b8b, #ff8e53);
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subheading {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .feature {
+            flex: 1 1 250px;
+            text-align: center;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #ff6b8b;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Testimonial */
+        .testimonial {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: 50px auto;
+            text-align: center;
+            font-style: italic;
+            position: relative;
+        }
+        
+        .testimonial::before, .testimonial::after {
+            content: '"';
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.3);
+            position: absolute;
+        }
+        
+        .testimonial::before {
+            top: 10px;
+            left: 20px;
+        }
+        
+        .testimonial::after {
+            bottom: 10px;
+            right: 20px;
+        }
+        
+        .author {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subheading {
+                font-size: 1.2rem;
+            }
+            
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="tagline">BEST DATING PLATFORM</div>
+            <h1>FIND YOUR PERFECT MATCH WITH US!</h1>
+            <div class="subheading">100% FREE | TRUSTED BY MILLIONS | REAL SUCCESS STORIES</div>
+            <a href="#signup" class="cta-button">JOIN NOW - IT'S FREE!</a>
+        </header>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">💖</div>
+                <h3>Smart Matching</h3>
+                <p>Advanced algorithm finds your most compatible partners based on your personality and preferences.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">✅</div>
+                <h3>Verified Profiles</h3>
+                <p>All profiles are manually verified to ensure authenticity - no bots or scams.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">💬</div>
+                <h3>Instant Chat</h3>
+                <p>Connect and flirt in real-time with our seamless messaging system.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">👫</div>
+                <h3>Success Stories</h3>
+                <p>Thousands of happy couples found love through our platform.</p>
+            </div>
+        </div>
+        
+        <div class="testimonial">
+            "I was skeptical at first, but I met my soulmate here within a month! Can't believe it was completely free!"
+            <span class="author">- Priya & Rahul, 2023</span>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="#signup" class="cta-button">START YOUR LOVE STORY TODAY</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div>🔒 Safe & Secure | 🌍 Global Community | 📱 Mobile-Friendly</div>
+        <div class="footer-links">
+            <a href="#" style="color: white;">Privacy Policy</a>
+            <a href="#" style="color: white;">Terms of Service</a>
+            <a href="#" style="color: white;">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>
